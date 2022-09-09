@@ -34,9 +34,9 @@ Contributors names and contact info
 
 This project is licensed. See the LICENSE.md file for details
 
-## Acknowledgments
+## Important Links
 
-* Markdown cheat sheet (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* Learn theme markdown (https://learn.netlify.app/en/cont/markdown/)
-* Menu extras and shortcuts (https://learn.netlify.app/en/cont/menushortcuts/) 
-* Using Font Awesome Emoji's to help your page pop (https://learn.netlify.app/en/cont/icons/)
+* Company Website: https://www.verygoodsecurity.com/
+* AWS Marketplace: https://aws.amazon.com/marketplace/seller-profile?id=1c6092e5-40b6-41c5-bb91-aa6ed62ae9be
+* The Very Good Vault Platform by VGS: https://www.verygoodsecurity.com/docs/
+* Payment Optimization: https://www.verygoodsecurity.com/docs/payment-optimization/
