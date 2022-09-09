@@ -19,7 +19,7 @@ Parameters:
   CloudFrontDistroId:
     Type: String
     Description: CloudFront distribution ID 
-    Default: vgs09092022
+    Default: E25ILSFFRGBZDA
   GitHubRepo:
     Type: String
     Description: repo name
