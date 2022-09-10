@@ -50,28 +50,28 @@ url = "https://awsworkshop.io"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i> AWS Builders Library"
-url = "https://aws.amazon.com/builders-library/"
+name = "<i class='fas fa-tools'></i> VGS Blog"
+url = "https://aws.amazon.com/blogs/apn/a-fintech-roadmap-to-data-security-and-compliance-with-vgs-and-aws/"
 weight = 11
 
 [[menu.shortcuts]]
-name = "<i class='far fa-lightbulb'></i> Modernization with AWS"
-url = "https://aws.amazon.com/blogs/modernizing-with-aws/"
+name = "<i class='far fa-lightbulb'></i> Very Good Security"
+url = "https://www.verygoodsecurity.com/"
 weight = 20
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard-teacher'></i> EKS Workshop"
-url = "https://eksworkshop.com/"
+name = "<i class='fas fa-chalkboard-teacher'></i> VGS Marketplace"
+url = "https://aws.amazon.com/marketplace/seller-profile?id=1c6092e5-40b6-41c5-bb91-aa6ed62ae9be"
 weight = 21
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard-teacher'></i> ECS Workshop"
-url = "https://ecsworkshop.com/"
+name = "<i class='fas fa-chalkboard-teacher'></i> VGS Vault"
+url = "https://www.verygoodsecurity.com/docs/"
 weight = 22
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard-teacher'></i> App Mesh Workshop"
-url = "https://www.appmeshworkshop.com/"
+name = "<i class='fas fa-chalkboard-teacher'></i> VGS Payment Optimization"
+url = "https://www.verygoodsecurity.com/docs/payment-optimization/"
 weight = 23
 
 [markup]
