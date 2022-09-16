@@ -44,10 +44,10 @@ weight: 1 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 
 ![VGS Dashboard Collect Web](/images/vgs-dashboard-collect-web.jpg)
 
-5) Scroll to the bottom of the page.
-6) Under "Next Steps", select "Start with Collect.js Form Builder.
-7) Finally, click on "Open Form Builder".
-8) The following pictures highlights, with red boxes, the areas to select/modify in steps #5 through #7.
+6) Scroll to the bottom of the page.
+7) Under "Next Steps", select "Start with Collect.js Form Builder.
+8) Finally, click on "Open Form Builder".
+9) The following pictures highlights, with red boxes, the areas to select/modify in steps #6 through #8.
 
 ![VGS Dashboard Collect Web Form Builder](/images/vgs-dashboard-collect-web-form-builder.jpg)
 
@@ -59,7 +59,9 @@ weight: 1 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 3) Click on VGS Collect.js Form Builder to exit the form template selection.
 4) The following pictures highlights, with red boxes, the areas to select/modify in steps #1 through #3.  
 
-![VGS Collect Form Builder SSN Form Template](/images/vgs-collect-form-builder-ssn-form-template.jpg)
+![VGS Collect Form Builder Choose From Template](/images/vgs-collect-form-builder-choose-from-template.jpg)  
+
+![VGS Collect Form Builder SSN Form Template](/images/vgs-collect-form-builder-ssn-form-template.jpg)  
 
 4) From the left-hand pane of the VGS Collect.js Form Builder, select "Add new field".
 5) Under Field Options on the left-hand side, check the "Field label" box and enter, "Name" in the box provided.
@@ -82,23 +84,35 @@ weight: 1 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 ![VGS Collect Form Builder SSN Form Add Phone Number](/images/vgs-collect-form-builder-ssn-form-add-phone-number.jpg)
 
 14) From the right-hand pane of the VGS Collect.js, select "Form Preview".
-15) You should now see 3 fields to capture the card payment.
+15) You should now see 3 fields to capture the PII needed for the KYC/AML/ID Verification.  .
 16) If desired, you can re-order the form boxes by clicking on the field box in the left-hand panel and dragging it to the desired order position.  
 17) From the right-hand pane of the VGS Collect.js Form Builder, select "Get Code".  
 18) You will see the following file types:  
         * JS (form.js) = The Javascript code contain the VGS Collect form creation and iFrames defined.  
         * HTML (index.html) - The HTML used to present the form.  
         * CSS (styles.css) - Contains CSS to style the form.  
-19) From the right-hand pane of the VGS Collect.js Form Builder, scroll to the bottom.  
-20) Hit "Download Code" to download the 3 files.  
-21) The following pictures highlights, with red boxes, the areas to select/modify in steps #14 through #20.  
+19) From the right-hand pane of the VGS Collect.js Form Builder, click on the "JS" tab.
+20) Scroll to the bottom.  
+21) Hit "Download Code" to download the 3 files.  
+22) The following pictures highlights, with red boxes, the areas to select/modify in steps #14 through #21.  
 
 ![VGS Collect Form Builder SSN Form Download Code](/images/vgs-collect-form-builder-ssn-form-download-code.jpg)
 
-21) Go to the "Download" folder on your local machine and locate the newly downloaded directory starting with "collect-form" and open it.  
-22) Edit the "form.js" file.  
-23) Replace the "\<Vault ID\>" with your VGS Data Vault ID recorded earlier.  
-24) Go to the bottom of the "form.js" file and locate the following code block:  
+23) Go to the "Download" folder on your local machine and locate the newly downloaded directory starting with "collect-form" and open it.  
+
+24) The following pictures highlights, with red boxes, the areas to select/modify in step #23.  
+
+![VGS Collect Download Folder Collect Form](/images/vgs-collect-download-folder-collect-form.jpg)
+
+25) Edit the "form.js" file.  
+26) Replace the '\<Vault ID\>' with your VGS Data Vault ID recorded earlier.  
+27) The following pictures highlights, with red boxes, the areas to select/modify in steps #25 and #26.  
+
+![VGS Collect SSN Form.js Edit](/images/vgs-collect-ssn-form-js-edit.jpg)
+
+![VGS Collect SSN Form.js Edit Complete](/images/vgs-collect-ssn-form-js-edit-complete.jpg)
+
+28) Go to the bottom of the "form.js" file and locate the code block below. Note that this is the form submit and denotes the destination API endpoint (/post).  
 
         document.addEventListener('submit', (e) => {  
           e.preventDefault();  
@@ -107,28 +121,15 @@ weight: 1 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
           });  
         });  
 
-25) Replace the '/post' above with '/process_input'. The resulting code block should look as follows:  
+29) The following pictures highlights, with red boxes, the areas to select/modify in step #28.  
 
-        document.addEventListener('submit', (e) => {  
-          e.preventDefault();  
-          form.submit('/process_input', { method: 'POST'}, (status, data) => {**  
-            document.getElementById('response').innerText = JSON.stringify(data.json, null, ' ');  
-          });  
-        });  
+![VGS Collect Payment Form.js Edit Submit](/images/vgs-collect-payment-form-js-edit-submit.jpg)
 
-26) Save the file.  
-27) Double-click on the "index.html" file to launch the KYC/AML/ID Verification Web Portal.  
-
-28) The following pictures highlights, with red boxes, the areas to select/modify in steps #21 through #27.
-
-![VGS Collect Download Folder Collect Form](/images/vgs-collect-download-folder-collect-form.jpg)
-
-![VGS Collect SSN Form.js Edit](/images/vgs-collect-ssn-form-js-edit.jpg)
-
-![VGS Collect SSN Form.js Edit Complete](/images/vgs-collect-ssn-form-js-edit-complete.jpg)
+30) Save the file.  
+31) Double-click on the "index.html" file to launch the KYC/AML/ID Verification Web Portal.  
+32) The following pictures highlights, with red boxes, the areas to select/modify in step #31.
 
 ![VGS PII Web Portal](/images/vgs-pii-web-portal.png)
-
 
 Please note that you just created a web portal (client-side application) that is descoped from PII-sensitive data.   
 

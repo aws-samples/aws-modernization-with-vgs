@@ -19,7 +19,7 @@ weight: 5 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
         * Card Security Code: 737  
         * **Amount: 2**  
 3) Hit "Submit" to run the test.  
-4) Confirm the PAN alias in the payment request response:  
+4) Confirm the PAN & CVC/CVV aliases in the payment request response:  
         {  
          "amount": "2",  
          "card-expiration-date": "03 / 30",  

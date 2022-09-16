@@ -40,6 +40,7 @@ weight: 3 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 
 ![VGS VGS PAN Alias Test](/images/vgs-pan-alias-test.png)  
  
-6) Notice that we haven't completely descoped the server-side from the PCI-sensitive data as the Card Security Code is still in the clear. This is because we only defined one filter to redact the PAN in the Inbound Route. We will correct this issue in the next section.  
+Notice that we haven't completely descoped the server-side from the PCI-sensitive data as the Card Security Code is still in the clear. This is because we only defined one filter to redact the PAN in the Inbound Route. We will correct this issue in the next section.  
+
 
 Congratulations, you have finished this section.  
