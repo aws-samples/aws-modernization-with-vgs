@@ -19,22 +19,18 @@ weight: 8 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
         * Card Security Code: 737  
         * **Amount: 52**  
 3) Hit "Submit" to run the test.  
-4) Confirm the PAN alias in the payment request response:  
-	{    
+4) Confirm the payment request response and note the PAN alias, CVC/CVV allias, PSP, PSP payment token, and status.:  
+	{  
 	 "a_name": "Charlie Business",  
-	 **"b_secure_card_number": "4111118052331111",**  
-	 **"c_secure_card_cvc": "tok_sandbox_tGo1cfJm9o8UGocoKX4L5c",**  
+	 **"b_card_number": "4242429360474242",**  
+	 **"c_card_cvc": "tok_sandbox_wh9BpmooGbJbKGEXTAm2hb",**  
 	 "d_card_exp": "3/30",  
 	 **"e_amount": 52,**  
-	 "f_currency": "USD",  
-	 "g_bin_type": "",  
-	 **"h_card_brand": "Visa",**  
-	 "i_card_type": "credit",  
-	 "j_issuing_country": "",  
-	 **"k_psp": "Checkout",**  
-	 **"l_psp_payment_token": "",**  
-	 **"m_status": "Authorized"** 
-	}  	
+	 **"f_currency": "USD",**  
+	 **"g_psp": "Checkout",**  
+	 **"h_checkout_payment_token": "tok_jkjb3ehmjbue7cqws6qe4ydeli",**  
+	 **"i_status": "Authorized"**  
+	}  
 5) If the above steps were done correctly, you should see a result similar to the following:
 
 ![VGS VGS PAN Alias Test](/images/vgs-end-to-end-card-payment-test-checkout.png)
@@ -46,21 +42,17 @@ weight: 8 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
         * **Card Security Code: 234**  
         * **Amount: 152**  
 7) Hit "Submit" to run the test.  
-8) Confirm the PAN alias in the payment request response:  
+8) Confirm the payment request response and note the PAN alias, CVC/CVV allias, PSP, PSP payment token, and status.:  
 	{  
 	 "a_name": "Charlie Business",  
-	 **"b_secure_card_number": "5454548983585454",**  
-	 **"c_secure_card_cvc": "tok_sandbox_sRkAuqm81eLEyo33TAQhsX",**  
+	 **"b_card_number": "5454546437625454",**  
+	 **"c_card_cvc": "tok_sandbox_7CFqhMPNwpY7TzVgtg5NL1",**  
 	 "d_card_exp": "3/30",  
 	 **"e_amount": 152,**  
-	 "f_currency": "USD",  
-	 "g_bin_type": "",  
-	 **"h_card_brand": "Mastercard",**  
-	 "i_card_type": "credit",  
-	 "j_issuing_country": "",  
-	 **"k_psp": "Stripe",**  
-	 **"l_psp_payment_token": "",**  
-	 **"m_status": "succeeded"**  
+	 **"f_currency": "USD",**  
+	 **"g_psp": "Stripe",**  
+	 **"h_stripe_payment_token": "tok_1LfcShFchPK9DlN13jiZT2AU",**  
+	 **"i_status": "succeeded"**  
 	}  
 9) If the above steps were done correctly, you should see a result similar to the following:
 

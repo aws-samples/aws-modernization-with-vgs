@@ -98,17 +98,17 @@ weight: 1 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 
 ![VGS Collect Download Folder Collect Form](/images/vgs-collect-download-folder-collect-form.jpg)  
 
-21) Replace the "\<Vault ID\>" with your VGS Data Vault ID recorded earlier.  
+21) Replace the '\<Vault ID\>' with your VGS Data Vault ID recorded earlier.  
 22) The following pictures highlights, with red boxes, the areas to select/modify in step #21.
 
 ![VGS Collect Payment Form.js Edit](/images/vgs-collect-payment-form-js-edit.jpg)  
 
-23) Go to the bottom of the "form.js" file and locate the following code block:   
+23) Go to the bottom of the "form.js" file. The following code block is the form submit and denotes the destination API endpoint:  
 
 	document.addEventListener('submit', (e) => {  
 		e.preventDefault();  
 		**form.submit('/post', { method: 'POST'}, (status, data) => {**  
-			document.getElementById('response').innerText = JSON.stringify(data.json, null, ' ');  
+		document.getElementById('response').innerText = JSON.stringify(data.json, null, ' ');  
 		});  
 	});  
 
@@ -116,22 +116,9 @@ weight: 1 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 
 ![VGS Collect Payment Form.js Edit Submit](/images/vgs-collect-payment-form-js-edit-submit.jpg)  
 
-25) Replace the '/post' above with '/process_input'. The resulting code block should look as follows:  
-
-    document.addEventListener('submit', (e) => {  
-        e.preventDefault();  
-        **form.submit('/process_input', { method: 'POST'}, (status, data) => {**  
-            document.getElementById('response').innerText = JSON.stringify(data.json, null, ' ');  
-        });  
-    });  
-
-26) The following pictures highlights, with red boxes, the areas to select/modify in step #25.
-
-![VGS Collect Payment Form.js Edit Submit](/images/vgs-collect-payment-form-js-edit-submit-complete.jpg)  
-
-26) Save the file.  
-27) Double-click on the "index.html" file to launch the Card Payment Web Portal.  
-28) The following pictures highlights, with red boxes, the areas to select/modify in step #27.  
+25) Save the file.  
+26) Double-click on the "index.html" file to launch the Card Payment Web Portal.  
+27) The following pictures highlights, with red boxes, the areas to select/modify in step #27.  
 
 ![VGS Card Payment Web Portal](/images/vgs-card-payment-web-portal.png)  
 

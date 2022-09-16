@@ -9,7 +9,7 @@ weight: 2
 The following prerequisites are required prior to starting this workshop.
 
 1) Creation of a VGS Data Vault account.
-2) Creation of simulated customer network via AWS CloudFormation Template.
+2) Initial onboarding to leverage the VGS simulated customer network. This step requires completion of #1 above and issance of VGs vault access credentials via the VGS Dashboard.  
 
 
 {{% notice warning %}}
