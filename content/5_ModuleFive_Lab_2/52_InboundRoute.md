@@ -12,14 +12,17 @@ weight: 2 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 2) On the top, left-hand side, just under the organization name, click on the "Vault" tab.  
 3) On the left-hand side, under "Vault", click on "Routes".  
 4) At the top, just under the "Vault ID", select the "HTTP" tab.  
-5) Under the "HTTP" tab, select the "All" tab.
-6) On the right-hand side, click on "Add Route" and select "Inbound route".  
+5) Under the “HTTP” tab, select “Inbound”.  
+6) On the right-hand side, click on the “Manage” button.  
 7) The following picture highlights, with red boxes, the areas to select/modify in steps #2 through #6.  
 
-![VGS Dashboard Routes](/images/vgs-dashboard-routes.jpg)  
+![VGS Dashboard Routes](/images/vgs-dashboard-routes-manage-inbound.jpg)  
 
-8) Modify the Upstream Host to point to the simulated customer network, "https://vgs-simulated-customer-network.ngrok.io".
-9) Scroll down to filters.  
+8) Confirm the Upstream Host points to the simulated customer network, "https://vgs-simulated-customer-network.ngrok.io" as shown in the following picture.
+
+![VGS Dashboard Inbound Routes Upstream Host](/images/vgs-dashboard-inbound-route-upstream-host-modify.jpg)  
+
+9) Scroll down to bottom and hit "Add filter".  
 10) Under "Conditions" in the default filter, note the following settings:  
         * PathInfo matches "/post". This points to your server-side API endpoint destination.  
         * ContentType equals "application/json". This defines the content type of the request.  
@@ -32,9 +35,9 @@ weight: 2 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 17) Click on "Storage" field and select "Persistent".  
 18) Under "Alias Format", click the field and select "Account Number - Number Length Preserving (A4) - xxxxxxxxxxxx<last_four>.  
 19) Scroll down and hit "Add filter".  
-20) The following pictures highlights, with red boxes, the areas to select/modify in steps #8 through #19.  
+20) The following pictures highlights, with red boxes, the areas to select/modify in steps #9 through #19.  
 
-![VGS Dashboard Inbound Routes Upstream Host](/images/vgs-dashboard-inbound-route-upstream-host-modify.jpg)  
+![VGS Dashboard Inbound Routes Add Filter](/images/vgs-dashboard-inbound-route-add-filter.jpg)  
 
 ![VGS Dashboard Inbound Routes Phone Number Conditions](/images/vgs-dashboard-inbound-route-redact-phone-number-conditions.jpg)  
 

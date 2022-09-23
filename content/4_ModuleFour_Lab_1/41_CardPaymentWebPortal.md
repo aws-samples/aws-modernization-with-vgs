@@ -103,22 +103,13 @@ weight: 1 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 
 ![VGS Collect Payment Form.js Edit](/images/vgs-collect-payment-form-js-edit.jpg)  
 
-23) Go to the bottom of the "form.js" file. The following code block is the form submit and denotes the destination API endpoint:  
-
-	document.addEventListener('submit', (e) => {  
-		e.preventDefault();  
-		**form.submit('/post', { method: 'POST'}, (status, data) => {**  
-		document.getElementById('response').innerText = JSON.stringify(data.json, null, ' ');  
-		});  
-	});  
-
-24) The following pictures highlights, with red boxes, the areas to select/modify in step #23.
+23) Go to the bottom of the "form.js" file. The following code block and highlighted area is the form submit and denotes the destination API endpoint:  
 
 ![VGS Collect Payment Form.js Edit Submit](/images/vgs-collect-payment-form-js-edit-submit.jpg)  
 
-25) Save the file.  
-26) Double-click on the "index.html" file to launch the Card Payment Web Portal.  
-27) The following pictures highlights, with red boxes, the areas to select/modify in step #27.  
+24) Save the file.  
+25) Double-click on the "index.html" file to launch the Card Payment Web Portal.  
+26) The following picture provides an illustration of the Card Payment Web Portal launched in step #26.  
 
 ![VGS Card Payment Web Portal](/images/vgs-card-payment-web-portal.png)  
 

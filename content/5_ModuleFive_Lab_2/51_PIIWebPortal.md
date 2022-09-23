@@ -112,22 +112,13 @@ weight: 1 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 
 ![VGS Collect SSN Form.js Edit Complete](/images/vgs-collect-ssn-form-js-edit-complete.jpg)
 
-28) Go to the bottom of the "form.js" file and locate the code block below. Note that this is the form submit and denotes the destination API endpoint (/post).  
-
-        document.addEventListener('submit', (e) => {  
-          e.preventDefault();  
-          **form.submit('/post', { method: 'POST'}, (status, data) => {**  
-            document.getElementById('response').innerText = JSON.stringify(data.json, null, ' ');  
-          });  
-        });  
-
-29) The following pictures highlights, with red boxes, the areas to select/modify in step #28.  
+28) Go to the bottom of the "form.js" file. The following code block and highlighted area is the form submit and denotes the destination API endpoint (/post).  
 
 ![VGS Collect Payment Form.js Edit Submit](/images/vgs-collect-payment-form-js-edit-submit.jpg)
 
-30) Save the file.  
-31) Double-click on the "index.html" file to launch the KYC/AML/ID Verification Web Portal.  
-32) The following pictures highlights, with red boxes, the areas to select/modify in step #31.
+29) Save the file.  
+30) Double-click on the "index.html" file to launch the PII Web Portal.  
+31) The following picture provides an illustration of the PII Web Portal launched in step #30.
 
 ![VGS PII Web Portal](/images/vgs-pii-web-portal.png)
 
