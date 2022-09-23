@@ -76,13 +76,12 @@ weight: 7 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 8) Under Upstream Host, review the setting pointing to Checkout.com's base API endpoint (https://api.stripe.com).  
 9) Scroll down to filters.  
 10) Under "Conditions" in the default filter, note the following settings:  
-        * PathInfo matches "/tokens". This points to your server-side API endpoint destination.  
-        * ContentType equals "application/json". This defines the content type of the request.  
+        * PathInfo matches "(.*)". This points to your server-side API endpoint destination. In this case, we use a wildcard to identify any Stripe API endpoint.   
 11) Phase: "On request". This defines the API phase. In this case, this filter will trigger on initial API call.  
 12) Scroll down and select the "Basic" tab below "Tag".  
 13) Under "Operation", select "REVEAL" to reveal the sensitive data alias.  
-14) Under "Content Type, select "Json" to identify the content type of the request.  
-15) Under "Fields in JSON path", enter "$.number" into field 1.  
+14) Under "Content Type, select "Form" to identify the content type of the request.  
+15) Under "Fields in FormData", enter "card[number]" into field 1.  
 16) Scroll down to "Storage" below "Targets".  
 17) Click on "Storage" field and select "Persistent".  
 18) Under "Alias Format", click the field and select "Payment Card - Format Preserving, Luhn Valid (6T4).  
@@ -96,13 +95,12 @@ weight: 7 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 
 20) Scroll down and hit "Add filter" to add the next filter.  
 21) Under "Conditions" in the default filter, note the following settings:  
-        * PathInfo matches "/tokens". This points to your server-side API endpoint destination.  
-        * ContentType equals "application/json". This defines the content type of the request.  
+        * PathInfo matches "(.*)". This points to your server-side API endpoint destination. In this case, we use a wildcard to identify any Stripe API endpoint.   
 22) Phase: "On request". This defines the API phase. In this case, this filter will trigger on initial API call.  
 23) Scroll down and select the "Basic" tab below "Tag".  
 24) Under "Operation", select "REVEAL" to reveal the sensitive data alias.  
-25) Under "Content Type, select "Json" to identify the content type of the request.  
-26) Under "Fields in JSON path", enter "$.cvc" into field 1.  
+25) Under "Content Type, select "Form" to identify the content type of the request.  
+26) Under "Fields in FormData", enter "card[cvc] into field 1.  
 27) Scroll down to "Storage" below "Targets".  
 28) Click on "Storage" field and select "Volatile".  
 29) Under "Alias Format", click the field and select "Generic VGS Alias (Default) - tok_sandbox_xxxxxxxxxxxxxxxxxxxxxx".  

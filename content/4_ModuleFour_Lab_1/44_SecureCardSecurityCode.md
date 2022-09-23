@@ -38,6 +38,10 @@ weight: 4 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 	* Hit the "Secure this payload" button. 
 	* After successful route update message in green, hit the "X" in the top-right of the "Payload Secured" window in order to close it.   
 
+11) The following picture highlights, with red box, provides an example of the "successful route update message in green" that should appear as result from step #10.
+
+![VGS Payload Logs](/images/vgs-single-payload-log-secure-cvc-route-update-msg.jpg)  
+
  
 Congratulations, you have finished this section.  
 

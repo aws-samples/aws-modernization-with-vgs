@@ -12,7 +12,7 @@ weight: 3 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 2) On the top, left-hand side, just under the organization name, click on the "Vault" tab.  
 3) On the left-hand side, under "Vault", click on "Logs".  
 4) At the top, just under the "Vault ID", select the "HTTP" tab.  
-5) Below the HTTP tab, click on the "Recording payloads" button.  
+5) Below the HTTP tab, click on the "Record payloads" button. You will see it change to "Recording payloads." 
 
 
 ## Run a PAN Alias Test  
@@ -28,7 +28,7 @@ weight: 3 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 	* Card Security Code: 737  
 	* Amount: 1  
 3) Hit "Submit" to run the test.  
-4) Confirm the PAN alias in the payment request response:  
+4) Confirm the PAN alias (your PAN alias will be different than what is shown below) in the payment request response:  
 	{  
 	 "amount": "1",  
 	 "card-expiration-date": "03 / 30",  
