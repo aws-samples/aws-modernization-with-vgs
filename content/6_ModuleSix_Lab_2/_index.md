@@ -1,7 +1,7 @@
 ---
 title: "Self-paced Lab #2"
 chapter: true
-weight: 5
+weight: 6
 ---
 
 # Self-paced Lab #2
@@ -25,3 +25,8 @@ This lab will walk partcipants through the following steps:
 * While not part of this lab, VGS also has VGS Show/VGS Mobile Show to securely present sensitive data (e.g. PCI-senstiive data) to end-users while descoping the client-side application from the sensitive data. 
 
 Let's get started...  
+
+
+{{% notice warning %}}
+The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various AWS services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.
+{{% /notice %}}

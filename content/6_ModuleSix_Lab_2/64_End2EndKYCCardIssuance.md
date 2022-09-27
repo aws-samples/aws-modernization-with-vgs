@@ -19,15 +19,17 @@ weight: 5 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 3) Hit "Submit" to run the test.  
 4) Confirm the results:  
 	{  
-	 "a_name": "Charlie Business",  
-	 **"b_phone_number": "7550301044",**  
-	 **"c_ssn": "992-24-2185",**  
-	 **"d_id_verified": "True",**  
-	 **"e_trust_score": "1000",**  
-	 **"f_secure_card_number": "5454548983585454",**  
-	 **"g_secure_card_cvc": "tok_sandbox_kj13GDN4bEgKPaR6qa6fZR",**  
-	 "h_card_exp": "3/30",  
+	 "a_name": "Barrie Hayman",  
+	 "b_secured_phone_number": "2273061044",  
+	 "c_secured_ssn": "940-14-2185",  
+	 "d_id_verified": "Success.",  
+	 "e_trust_score": 1000,  
+	 "f_trust_score_thresdhold": 930,  
+	 "g_secured_card_number": "4000008928664247",  
+	 "h_secured_cvc": "tok_sandbox_evKaKkfdF1ePkxgDPqDf8t",  
+	 "i_exp_date": "08/2025"  
 	}  
+
 5) If the above steps were done correctly, you should see a result similar to the following:  
 
 ![VGS End to End KYC/AML/ID Verification & Card Issuance Test](/images/vgs-end-to-end-kyc-aml-id-verification-&-card-issuance-test.png)  

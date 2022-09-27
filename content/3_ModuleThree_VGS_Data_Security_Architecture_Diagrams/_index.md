@@ -1,19 +1,15 @@
 ---
-title: "Workshop Data Flow Diagrams" # MODIFY THIS TITLE IF APPLICABLE
+title: "VGS Data Security Architecture" # MODIFY THIS TITLE IF APPLICABLE
 chapter: true
 weight: 3
 ---
 
-# Workshop Data Flow Diagrams <!-- MODIFY THIS HEADING -->
+# VGS Data Security Architecture <!-- MODIFY THIS HEADING -->
 
-This workshop will cover two common VGS data flows as follows:
+This section provides an overview of the VGS Data Security Architecture and VGS Simulated Customer Network:  
 
-1) Lab #1:  
-	* End to end payments flow  
-	* Brand-based routing to payment service providers 
-2) Lab #2:  
-	* Know Your Customer (KYC) / Anti-money Laundering (AML) / ID Verification  
-	* Card Issuance
+1) VGS Data Security Architecture  
+2) VGS Simulated Customer Network (used for this workshop)  
 
 
 {{% notice warning %}}

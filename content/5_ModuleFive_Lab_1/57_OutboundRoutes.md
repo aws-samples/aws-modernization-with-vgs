@@ -20,8 +20,8 @@ weight: 7 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 
 ![VGS Dashboard Routes](/images/vgs-dashboard-outbound-route-checkout.jpg)  
 
-8) Under Upstream Host, review the setting pointing to Checkout.com's base API endpoint (https://api.sandbox.checkout.com).  
-9) Scroll down to filters.  
+8) Under Upstream Host, modify the Upstream Host to point to Checkout.com's base API endpoint (https://api.sandbox.checkout.com).  
+9) Scroll down to "Filters".  
 10) Under "Conditions" in the default filter, note the following settings:  
         * PathInfo matches "/tokens". This points to your server-side API endpoint destination.  
         * ContentType equals "application/json". This defines the content type of the request.  
@@ -73,8 +73,8 @@ weight: 7 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 
 ![VGS Dashboard Routes](/images/vgs-dashboard-outbound-route-stripe.jpg)  
 
-8) Under Upstream Host, review the setting pointing to Checkout.com's base API endpoint (https://api.stripe.com).  
-9) Scroll down to filters.  
+8) Under Upstream Host, modify the Upstream Host to point to Stripe's base API endpoint (https://api.stripe.com).  
+9) Scroll down to "Filters".  
 10) Under "Conditions" in the default filter, note the following settings:  
         * PathInfo matches "(.*)". This points to your server-side API endpoint destination. In this case, we use a wildcard to identify any Stripe API endpoint.   
 11) Phase: "On request". This defines the API phase. In this case, this filter will trigger on initial API call.  
