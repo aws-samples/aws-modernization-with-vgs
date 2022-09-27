@@ -18,7 +18,7 @@ weight: 2 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 ![VGS Dashboard Routes](/images/vgs-dashboard-routes.jpg)  
 
 7) Under Upstream Host, review the setting pointing to the VGS Sandbox Echo Server (https://echo.apps.verygood.systems). The upstream host identifies where to forward the API call after the sensitive data is secured/aliased. In this step, we are setting the upstream host to a cloud echo server that will return whatever it receives to the client-side application.  
-8) Scroll down to filters.  
+8) Scroll down to "Filters".  
 9) Under "Conditions" in the default filter, note the following settings:  
 	* PathInfo matches "/post". This points to your server-side API endpoint destination.  
 	* ContentType equals "application/json". This defines the content type of the request.

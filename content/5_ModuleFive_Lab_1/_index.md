@@ -1,7 +1,7 @@
 ---
 title: "Self-paced Lab #1"
 chapter: true
-weight: 4
+weight: 5
 ---
 
 # Lab #1  
@@ -22,4 +22,9 @@ This lab will walk partcipants through the following steps:
 7) Configuration of outbound routes (VGS Forward Proxy) to reveal the PCI-sensitive data to 3rd-party payemnt services providers to execute payment transasctions. Along with the VGS Reverse Proxy, the VGS Forward Proxy descopes the server-side applications from the PCI-sensitive data.    
 8) Complete end to end test of payment requests to two payment service providers.  
 
-Let's get started...
+Let's get started...  
+
+
+{{% notice warning %}}
+The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various AWS services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.
+{{% /notice %}}
