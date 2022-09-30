@@ -32,7 +32,7 @@ weight: 4 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 12) Scroll down and select the "Basic" tab below "Tag".  
 13) Under "Operation", select "REVEAL" to reveal the sensitive data alias.  
 14) Under "Content Type, select "Json" to identify the content type of the request.  
-15) Under "Fields in JSON path", enter "$.phone_number" into field 1.  
+15) Under "Fields in JSON path", enter "$.phoneNumber" into field 1.  
 16) Scroll down to "Storage" below "Targets".
 17) Click on "Storage" field and select "Persistent".
 18) Under "Alias Format", click the field and select "Account Number - Number Length Preserving (A4) - xxxxxxxxxxxx<last four>.  
@@ -89,8 +89,8 @@ weight: 4 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 12) Phase: "On request". This defines the API phase. In this case, this filter will trigger on API call response.  
 13) Scroll down and select the "Basic" tab below "Tag".  
 14) Under "Operation", select "REVEAL" to reveal the sensitive data alias.  
-15) Under "Content Type, select "Json" to identify the content type of the request.  
-16) Under "Fields in JSON path", enter "$.phone_number" into field 1.  
+15) Under "Content Type, select "Form" to identify the content type of the request.  
+16) Under "Fields in JSON path", enter "phone_number" into field 1.  
 17) Scroll down to "Storage" below "Targets".
 18) Click on "Storage" field and select "Persistent".
 19) Under "Alias Format", click the field and select "Account Number - Number Length Preserving (A4) - xxxxxxxxxxxx<last four>.  
