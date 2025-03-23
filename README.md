@@ -27,8 +27,8 @@ In this workshop you will learn why DevOps and DevSecOps teams are turning to Da
 
 Contributors names and contact info
 
-* Charlie Foster (charlie.foster@vgs.io)
-* Chintan Sanghavi (sanghavc@amazon.com) 
+* John Brunot (jmbrunot@amazon.com)
+* Patrick Vassell (pjv@amazon.com) 
 
 ## License
 
